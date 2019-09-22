@@ -1,0 +1,9 @@
+F:\Workspace\Visio Studio\COMtest\COMtest\bin\Debug\COMtest.exe
+F:\Workspace\Visio Studio\COMtest\COMtest\bin\Debug\COMtest.pdb
+F:\Workspace\Visio Studio\COMtest\COMtest\obj\Debug\COMtest.csprojAssemblyReference.cache
+F:\Workspace\Visio Studio\COMtest\COMtest\obj\Debug\COMtest.Properties.Resources.resources
+F:\Workspace\Visio Studio\COMtest\COMtest\obj\Debug\COMtest.csproj.GenerateResource.cache
+F:\Workspace\Visio Studio\COMtest\COMtest\obj\Debug\COMtest.csproj.CoreCompileInputs.cache
+F:\Workspace\Visio Studio\COMtest\COMtest\obj\Debug\COMtest.exe
+F:\Workspace\Visio Studio\COMtest\COMtest\obj\Debug\COMtest.pdb
+F:\Workspace\Visio Studio\COMtest\COMtest\obj\Debug\COMtest.Form1.resources
