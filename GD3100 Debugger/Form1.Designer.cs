@@ -108,6 +108,10 @@
             this.LabelSendCount = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.tabPageConfig = new System.Windows.Forms.TabPage();
+            this.checkBoxCfgAllEn = new System.Windows.Forms.CheckBox();
+            this.checkedListBoxCfgEn = new System.Windows.Forms.CheckedListBox();
+            this.btnCfgMskReg = new System.Windows.Forms.Button();
+            this.btnCfgCfgReg = new System.Windows.Forms.Button();
             this.btnCfgModeReg = new System.Windows.Forms.Button();
             this.btnCfgAllReg = new System.Windows.Forms.Button();
             this.tabPageSendData = new System.Windows.Forms.TabPage();
@@ -142,10 +146,6 @@
             this.StatusRegBit1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.StatusRegBit0 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.GBoxUartSet = new System.Windows.Forms.GroupBox();
-            this.btnCfgCfgReg = new System.Windows.Forms.Button();
-            this.btnCfgMskReg = new System.Windows.Forms.Button();
-            this.checkedListBoxCfgEn = new System.Windows.Forms.CheckedListBox();
-            this.checkBoxCfgAllEn = new System.Windows.Forms.CheckBox();
             this.GBoxMessageView.SuspendLayout();
             this.tabPageConfig.SuspendLayout();
             this.tabPageSendData.SuspendLayout();
@@ -398,6 +398,52 @@
             this.tabPageConfig.TabIndex = 1;
             this.tabPageConfig.Text = "配置参数";
             this.tabPageConfig.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCfgAllEn
+            // 
+            this.checkBoxCfgAllEn.AutoSize = true;
+            this.checkBoxCfgAllEn.Location = new System.Drawing.Point(152, 6);
+            this.checkBoxCfgAllEn.Name = "checkBoxCfgAllEn";
+            this.checkBoxCfgAllEn.Size = new System.Drawing.Size(132, 16);
+            this.checkBoxCfgAllEn.TabIndex = 6;
+            this.checkBoxCfgAllEn.Text = "使能所有GD3100配置";
+            this.checkBoxCfgAllEn.UseVisualStyleBackColor = true;
+            this.checkBoxCfgAllEn.Click += new System.EventHandler(this.CheckBoxCfgAllEn_Click);
+            // 
+            // checkedListBoxCfgEn
+            // 
+            this.checkedListBoxCfgEn.CheckOnClick = true;
+            this.checkedListBoxCfgEn.FormattingEnabled = true;
+            this.checkedListBoxCfgEn.Items.AddRange(new object[] {
+            "使能HU配置",
+            "使能HV配置",
+            "使能HW配置",
+            "使能LU配置",
+            "使能LV配置",
+            "使能LW配置"});
+            this.checkedListBoxCfgEn.Location = new System.Drawing.Point(152, 23);
+            this.checkedListBoxCfgEn.Name = "checkedListBoxCfgEn";
+            this.checkedListBoxCfgEn.Size = new System.Drawing.Size(133, 100);
+            this.checkedListBoxCfgEn.TabIndex = 5;
+            this.checkedListBoxCfgEn.SelectedIndexChanged += new System.EventHandler(this.CheckedListBoxCfgEn_SelectedIndexChanged);
+            // 
+            // btnCfgMskReg
+            // 
+            this.btnCfgMskReg.Location = new System.Drawing.Point(7, 94);
+            this.btnCfgMskReg.Name = "btnCfgMskReg";
+            this.btnCfgMskReg.Size = new System.Drawing.Size(106, 23);
+            this.btnCfgMskReg.TabIndex = 3;
+            this.btnCfgMskReg.Text = "Mask寄存器";
+            this.btnCfgMskReg.UseVisualStyleBackColor = true;
+            // 
+            // btnCfgCfgReg
+            // 
+            this.btnCfgCfgReg.Location = new System.Drawing.Point(7, 65);
+            this.btnCfgCfgReg.Name = "btnCfgCfgReg";
+            this.btnCfgCfgReg.Size = new System.Drawing.Size(106, 23);
+            this.btnCfgCfgReg.TabIndex = 2;
+            this.btnCfgCfgReg.Text = "Config寄存器";
+            this.btnCfgCfgReg.UseVisualStyleBackColor = true;
             // 
             // btnCfgModeReg
             // 
@@ -814,52 +860,6 @@
             this.GBoxUartSet.TabIndex = 32;
             this.GBoxUartSet.TabStop = false;
             this.GBoxUartSet.Text = "串口设置";
-            // 
-            // btnCfgCfgReg
-            // 
-            this.btnCfgCfgReg.Location = new System.Drawing.Point(7, 65);
-            this.btnCfgCfgReg.Name = "btnCfgCfgReg";
-            this.btnCfgCfgReg.Size = new System.Drawing.Size(106, 23);
-            this.btnCfgCfgReg.TabIndex = 2;
-            this.btnCfgCfgReg.Text = "Config寄存器";
-            this.btnCfgCfgReg.UseVisualStyleBackColor = true;
-            // 
-            // btnCfgMskReg
-            // 
-            this.btnCfgMskReg.Location = new System.Drawing.Point(7, 94);
-            this.btnCfgMskReg.Name = "btnCfgMskReg";
-            this.btnCfgMskReg.Size = new System.Drawing.Size(106, 23);
-            this.btnCfgMskReg.TabIndex = 3;
-            this.btnCfgMskReg.Text = "Mask寄存器";
-            this.btnCfgMskReg.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBoxCfgEn
-            // 
-            this.checkedListBoxCfgEn.CheckOnClick = true;
-            this.checkedListBoxCfgEn.FormattingEnabled = true;
-            this.checkedListBoxCfgEn.Items.AddRange(new object[] {
-            "使能HU配置",
-            "使能HV配置",
-            "使能HW配置",
-            "使能LU配置",
-            "使能LV配置",
-            "使能LW配置"});
-            this.checkedListBoxCfgEn.Location = new System.Drawing.Point(152, 23);
-            this.checkedListBoxCfgEn.Name = "checkedListBoxCfgEn";
-            this.checkedListBoxCfgEn.Size = new System.Drawing.Size(133, 100);
-            this.checkedListBoxCfgEn.TabIndex = 5;
-            this.checkedListBoxCfgEn.SelectedIndexChanged += new System.EventHandler(this.CheckedListBoxCfgEn_SelectedIndexChanged);
-            // 
-            // checkBoxCfgAllEn
-            // 
-            this.checkBoxCfgAllEn.AutoSize = true;
-            this.checkBoxCfgAllEn.Location = new System.Drawing.Point(152, 6);
-            this.checkBoxCfgAllEn.Name = "checkBoxCfgAllEn";
-            this.checkBoxCfgAllEn.Size = new System.Drawing.Size(132, 16);
-            this.checkBoxCfgAllEn.TabIndex = 6;
-            this.checkBoxCfgAllEn.Text = "使能所有GD3100配置";
-            this.checkBoxCfgAllEn.UseVisualStyleBackColor = true;
-            this.checkBoxCfgAllEn.Click += new System.EventHandler(this.CheckBoxCfgAllEn_Click);
             // 
             // Form1
             // 

@@ -19,7 +19,10 @@ namespace GD3100Debugger
 	public partial class Form1 : Form
 	{
 
-		SerialPort serialPort = null;
+        public MyDelegate cfgAllRegsFormMessage;
+
+
+        SerialPort serialPort = null;
 		string prePortName	= null;
 		
 		bool isOpen = false;
@@ -152,10 +155,10 @@ namespace GD3100Debugger
 			{
 				cbxComPort.SelectedIndex = 0;
 			}
-
-			//ShowMessageThread = new Thread(
-			//	new ParameterizedThreadStart(ShowMessage));
-		}
+            cfgAllRegsFormMessage = new MyDelegate(cfgAllRegsFormMessageHandle);
+            //ShowMessageThread = new Thread(
+            //	new ParameterizedThreadStart(ShowMessage));
+        }
 
 		private void checkBoxShowInHex_CheckedChanged(object sender, EventArgs e)
 		{
@@ -1262,281 +1265,6 @@ namespace GD3100Debugger
 			e.Cancel = isSendingFile;
 		}
 
-		private void SetUartBaudEvent(object sender, EventArgs e)
-		{
-			if (CheckIsOpen())
-			{
-				//if(cbxSetUartBaud.Text.Equals(""))
-				//{
-				//	return;
-				//}
-				//foreach (char c in cbxSetUartBaud.Text)
-				//{
-				//	if(c<'0' || c > '9')
-				//	{
-				//		return;
-				//	}
-				//}
-				//serialDataTransmission("AT+@UBAUD=" + cbxSetUartBaud.Text);
-			}
-		}
-
-		private void SetUartStopBitsEvent(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			//if (cbxSetUartStopBits.Text.Equals(ConfigInfo.StopBits.OneBit.ToString()))
-			//{
-			//	serialDataTransmission("AT+@USTOP=" + "0");
-			//}
-			//else if (cbxSetUartStopBits.Text.Equals(ConfigInfo.StopBits.TwoBit.ToString()))
-			//{
-			//	serialDataTransmission("AT+@USTOP=" + "1");
-			//}
-		}
-
-		private void SetUartParityEvent(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			//if (cbxSetUartParity.Text.Equals(ConfigInfo.Parity.无.ToString()))
-			//{
-			//	serialDataTransmission("AT+@UPARI=" + "0");
-			//}
-			//else if (cbxSetUartParity.Text.Equals(ConfigInfo.Parity.奇校验.ToString()))
-			//{
-			//	serialDataTransmission("AT+@UPARI=" + "2");
-			//}
-			//else if (cbxSetUartParity.Text.Equals(ConfigInfo.Parity.偶校验.ToString()))
-			//{
-			//	serialDataTransmission("AT+@UPARI=" + "3");
-			//}
-		}
-
-		private void SetUartTxModeEvent(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			//if (cbxSetUartTxMode.Text.Equals(ConfigInfo.TransferMode.模式0.ToString()))
-			//{
-			//	serialDataTransmission("AT+@UTMODE=" + "0");
-			//}
-			//else if (cbxSetUartTxMode.Text.Equals(ConfigInfo.TransferMode.模式1.ToString()))
-			//{
-			//	serialDataTransmission("AT+@UTMODE=" + "1");
-			//}
-		}
-
-		private void SetUartRxModeEvent(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			//if (cbxSetUartRxMode.Text.Equals(ConfigInfo.TransferMode.模式0.ToString()))
-			//{
-			//	serialDataTransmission("AT+@URMODE=" + "0");
-			//}
-			//else if (cbxSetUartRxMode.Text.Equals(ConfigInfo.TransferMode.模式1.ToString()))
-			//{
-			//	serialDataTransmission("AT+@RTMODE=" + "1");
-			//}
-
-		}
-
-		private void SetCanBaudEvent(object sender, EventArgs e)
-		{
-			if (CheckIsOpen())
-			{
-				//if (cbxSetCanBaud.Text.Equals(""))
-				//{
-				//	return;
-				//}
-				//string baud = cbxSetCanBaud.Text.Split('k')[0];
-				//foreach (char c in baud)
-				//{
-				//	if (c < '0' || c > '9')
-				//	{
-				//		return;
-				//	}
-				//}
-				//if (Convert.ToInt32(baud) == 0)
-				//{
-				//	return;
-				//}
-				//serialDataTransmission("AT+@CBAUD=" + baud + "000");
-				//if (!cbxSetCanBaud.Text.Contains("kbps"))
-				//{
-				//	cbxSetCanBaud.Text = baud + "kbps";
-				//}
-			}
-		}
-
-		private void SetCanFDBaudEvent(object sender, EventArgs e)
-		{
-			if (CheckIsOpen())
-			{
-				//if (cbxSetCanFDBaud.Text.Equals(""))
-				//{
-				//	return;
-				//}
-				//string baud = cbxSetCanFDBaud.Text.Split('k')[0];
-				//foreach (char c in baud)
-				//{
-				//	if (c < '0' || c > '9')
-				//	{
-				//		return;
-				//	}
-				//}
-				//if (Convert.ToInt32(baud) == 0)
-				//{
-				//	return;
-				//}
-				//serialDataTransmission("AT+@CFDBAUD=" + baud + "000");
-				//if (!cbxSetCanFDBaud.Text.Contains("kbps"))
-				//{
-				//	cbxSetCanFDBaud.Text = baud + "kbps";
-				//}
-			}
-		}
-
-		private void btnSetCanRxId_Click(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			string sId = null;
-			//if (tbxSetCanRxId.Text.StartsWith("0x") || tbxSetCanRxId.Text.StartsWith("0X"))
-			//{
-			//	char[] cId = tbxSetCanRxId.Text.ToCharArray();
-			//	for (int i=2; i< tbxSetCanRxId.Text.Length; i++)
-			//	{
-			//		if(!(('0'<=cId[i] && cId[i] <= '9') || ('a'<= cId[i] && cId[i] <= 'z')
-			//			||('A' <= cId[i] && cId[i] <= 'z')))
-			//		{
-			//			return;
-			//		}
-			//	}
-			//}
-			//else
-			//{
-			//	sId = tbxSetCanRxId.Text;
-			//	foreach (char c in sId)
-			//	{
-			//		if(c<'0' || c>'9')
-			//		{
-			//			return;
-			//		}
-			//	}
-			//}
-			//serialDataTransmission("AT+@CRXID=" + tbxSetCanRxId.Text);
-		}
-
-		private void btnSetCanTxId_Click(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			string sId = null;
-			//if (tbxSetCanTxId.Text.StartsWith("0x") || tbxSetCanTxId.Text.StartsWith("0X"))
-			//{
-			//	char[] cId = tbxSetCanTxId.Text.ToCharArray();
-			//	for (int i = 2; i < tbxSetCanTxId.Text.Length; i++)
-			//	{
-			//		if (!(('0' <= cId[i] && cId[i] <= '9') || ('a' <= cId[i] && cId[i] <= 'z')
-			//			|| ('A' <= cId[i] && cId[i] <= 'z')))
-			//		{
-			//			return;
-			//		}
-			//	}
-			//}
-			//else
-			//{
-			//	sId = tbxSetCanTxId.Text;
-			//	foreach (char c in sId)
-			//	{
-			//		if (c < '0' || c > '9')
-			//		{
-			//			return;
-			//		}
-			//	}
-			//}
-			//serialDataTransmission("AT+@CRXID=" + tbxSetCanTxId.Text);
-		}
-
-		private void btnSetCanIdMask_Click(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			string sId = null;
-			//if (tbxSetCanIdMask.Text.StartsWith("0x") || tbxSetCanIdMask.Text.StartsWith("0X"))
-			//{
-			//	char[] cId = tbxSetCanIdMask.Text.ToCharArray();
-			//	for (int i = 2; i < tbxSetCanIdMask.Text.Length; i++)
-			//	{
-			//		if (!(('0' <= cId[i] && cId[i] <= '9') || ('a' <= cId[i] && cId[i] <= 'z')
-			//			|| ('A' <= cId[i] && cId[i] <= 'z')))
-			//		{
-			//			return;
-			//		}
-			//	}
-			//}
-			//else
-			//{
-			//	sId = tbxSetCanIdMask.Text;
-			//	foreach (char c in sId)
-			//	{
-			//		if (c < '0' || c > '9')
-			//		{
-			//			return;
-			//		}
-			//	}
-			//}
-			//serialDataTransmission("AT+@CRXID=" + tbxSetCanIdMask.Text);
-		}
-
-		private void SetCanFDEnableEvent(object sender, EventArgs e)
-		{
-			//if (cbxSetCanFDEnable.Text.Equals(ConfigInfo.Enable.Disable.ToString()))
-			//{
-			//	serialDataTransmission("AT+@CFDEN=" + "0");
-			//}
-			//else if (cbxSetCanFDEnable.Text.Equals(ConfigInfo.Enable.Enable.ToString()))
-			//{
-			//	serialDataTransmission("AT+@CFDEN=" + "1");
-			//}
-		}
-
-		private void SetCanTxIdEvent(object sender, EventArgs e)
-		{
-			if (!CheckIsOpen())
-			{
-				return;
-			}
-			//if (cbxSetCanTxMode.Text.Equals(ConfigInfo.TransferMode.模式0.ToString()))
-			//{
-			//	serialDataTransmission("AT+@CTMODE=" + "0");
-			//}
-			//else if (cbxSetCanTxMode.Text.Equals(ConfigInfo.TransferMode.模式1.ToString()))
-			//{
-			//	serialDataTransmission("AT+@CTMODE=" + "1");
-			//}
-			//else if (cbxSetCanTxMode.Text.Equals(ConfigInfo.TransferMode.模式2.ToString()))
-			//{
-			//	serialDataTransmission("AT+@CTMODE=" + "2");
-			//}
-		}
-
 		private void SetCanRxModeEvent(object sender, EventArgs e)
 		{
 			if (!CheckIsOpen())
@@ -1880,6 +1608,7 @@ namespace GD3100Debugger
             if (setAllRegsForm == null)
             {
                 setAllRegsForm = new CfgAllRegsForm();
+                setAllRegsForm.messageToMainFram = cfgAllRegsFormMessage;
             }
             setAllRegsForm.Show();
             setAllRegsForm.Select();
@@ -1905,6 +1634,14 @@ namespace GD3100Debugger
             {
                 checkedListBoxCfgEn.SetItemChecked(i, checkBox.Checked);
             }
+        }
+
+        public void cfgAllRegsFormMessageHandle(FramLoad framLoad)
+        {
+            MyMessage msg = new MyMessage();
+            msg.SetWhat(3);
+            msg.SetObj("CS:" + framLoad.ChipSelect + "\r\naddr:" + framLoad.RegAddr + "\r\ndata:" + framLoad.Data + "\r\n");
+            this.ShowMessage(msg);
         }
     }
 }
