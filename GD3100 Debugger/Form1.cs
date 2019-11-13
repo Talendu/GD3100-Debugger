@@ -20,7 +20,7 @@ namespace GD3100Debugger
 	{
 
         public MyDelegate cfgAllRegsFormMessage;
-
+        public MyDelegate messageToCfgAllRegsForm = null;
 
         SerialPort serialPort = null;
 		string prePortName	= null;
@@ -765,7 +765,9 @@ namespace GD3100Debugger
 			{
 				ShowBytes(buff, 1);
 			}
+
 		}
+
 
 		private void FileSendXmodemHandle(object sender, SerialDataReceivedEventArgs e)
 		{
@@ -1361,6 +1363,7 @@ namespace GD3100Debugger
 			string receive = Encoding.Default.GetString(buff).TrimEnd('\0');
 			string[] receives = receive.Split(':');
 
+            
 			if (receives.Length > 1
 				&& receives[1].Length > 0 
 				&& ConfigItems.Contains(receives[0]))
@@ -1545,7 +1548,7 @@ namespace GD3100Debugger
 				GetConfigInfoError();
 				return;
 			}
-
+            
 			MyMessage msg = new MyMessage(3);
 			msg.SetObj("获取成功\r\n");
 			ShowMessage(msg);

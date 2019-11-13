@@ -11,7 +11,6 @@ F:\Workspace\Visio Studio\GD3100 Debuger\COMtest\obj\Debug\GD3100Debugger.Form2.
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100 Debugger.csprojAssemblyReference.cache
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100Debugger.Form1.resources
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100 Debugger.csproj.GenerateResource.cache
-F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100 Debugger.csproj.CoreCompileInputs.cache
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100Debugger.CfgAllRegsForm.resources
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100Debugger.HelpForm.resources
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\bin\Debug\GD3100Debugger.exe
@@ -19,3 +18,4 @@ F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\bin\Debug\GD3100Debugge
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100Debugger.Properties.Resources.resources
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100Debugger.exe
 F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\obj\Debug\GD3100Debugger.pdb
+F:\Workspace\Visio Studio\GD3100 Debuger\GD3100 Debugger\bin\Debug\GD3100Debugger.exe.config

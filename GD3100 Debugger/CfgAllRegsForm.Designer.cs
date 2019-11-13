@@ -402,8 +402,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.tableLayoutPanelMode2);
             this.groupBox2.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -635,8 +633,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.tableLayoutPanelMode1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -904,7 +900,7 @@
             this.groupBox8.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox8.Location = new System.Drawing.Point(6, 1156);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(770, 225);
+            this.groupBox8.Size = new System.Drawing.Size(753, 225);
             this.groupBox8.TabIndex = 7;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "CONFIG6";
@@ -948,15 +944,15 @@
             this.tableLayoutPanelConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanelConfig6.Size = new System.Drawing.Size(758, 200);
+            this.tableLayoutPanelConfig6.Size = new System.Drawing.Size(741, 200);
             this.tableLayoutPanelConfig6.TabIndex = 1;
             // 
             // label74
             // 
             this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label74.Location = new System.Drawing.Point(350, 0);
+            this.label74.Location = new System.Drawing.Point(341, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(130, 25);
+            this.label74.Size = new System.Drawing.Size(127, 25);
             this.label74.TabIndex = 0;
             this.label74.Text = "bit[5:4]\r\nWDTO[1:0]";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -964,9 +960,9 @@
             // label75
             // 
             this.label75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label75.Location = new System.Drawing.Point(486, 0);
+            this.label75.Location = new System.Drawing.Point(474, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(269, 25);
+            this.label75.Size = new System.Drawing.Size(264, 25);
             this.label75.TabIndex = 0;
             this.label75.Text = "bit[3:0]\r\nVGEMONDLY[3:0]";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -976,7 +972,7 @@
             this.label77.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label77.Location = new System.Drawing.Point(3, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(69, 25);
+            this.label77.Size = new System.Drawing.Size(68, 25);
             this.label77.TabIndex = 0;
             this.label77.Text = "寄存器位";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -986,7 +982,7 @@
             this.label78.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label78.Location = new System.Drawing.Point(3, 50);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(69, 25);
+            this.label78.Size = new System.Drawing.Size(68, 25);
             this.label78.TabIndex = 0;
             this.label78.Text = "HU";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -996,7 +992,7 @@
             this.label79.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label79.Location = new System.Drawing.Point(3, 75);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(69, 25);
+            this.label79.Size = new System.Drawing.Size(68, 25);
             this.label79.TabIndex = 0;
             this.label79.Text = "HV";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1006,7 +1002,7 @@
             this.label80.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label80.Location = new System.Drawing.Point(3, 100);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(69, 25);
+            this.label80.Size = new System.Drawing.Size(68, 25);
             this.label80.TabIndex = 0;
             this.label80.Text = "HW";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1016,7 +1012,7 @@
             this.label81.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label81.Location = new System.Drawing.Point(3, 125);
             this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(69, 25);
+            this.label81.Size = new System.Drawing.Size(68, 25);
             this.label81.TabIndex = 0;
             this.label81.Text = "LU";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1026,7 +1022,7 @@
             this.label82.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label82.Location = new System.Drawing.Point(3, 150);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(69, 25);
+            this.label82.Size = new System.Drawing.Size(68, 25);
             this.label82.TabIndex = 0;
             this.label82.Text = "LV";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1036,7 +1032,7 @@
             this.label88.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label88.Location = new System.Drawing.Point(3, 25);
             this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(69, 25);
+            this.label88.Size = new System.Drawing.Size(68, 25);
             this.label88.TabIndex = 0;
             this.label88.Text = "全部";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1044,9 +1040,9 @@
             // label62
             // 
             this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label62.Location = new System.Drawing.Point(78, 0);
+            this.label62.Location = new System.Drawing.Point(77, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(62, 25);
+            this.label62.Size = new System.Drawing.Size(60, 25);
             this.label62.TabIndex = 0;
             this.label62.Text = "bit9\r\nINTBFS";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1054,9 +1050,9 @@
             // label73
             // 
             this.label73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label73.Location = new System.Drawing.Point(146, 0);
+            this.label73.Location = new System.Drawing.Point(143, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(62, 25);
+            this.label73.Size = new System.Drawing.Size(60, 25);
             this.label73.TabIndex = 0;
             this.label73.Text = "bit8";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1064,9 +1060,9 @@
             // label76
             // 
             this.label76.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label76.Location = new System.Drawing.Point(214, 0);
+            this.label76.Location = new System.Drawing.Point(209, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(62, 25);
+            this.label76.Size = new System.Drawing.Size(60, 25);
             this.label76.TabIndex = 0;
             this.label76.Text = "bit7";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1074,9 +1070,9 @@
             // label90
             // 
             this.label90.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label90.Location = new System.Drawing.Point(282, 0);
+            this.label90.Location = new System.Drawing.Point(275, 0);
             this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(62, 25);
+            this.label90.Size = new System.Drawing.Size(60, 25);
             this.label90.TabIndex = 0;
             this.label90.Text = "bit6";
             this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1086,7 +1082,7 @@
             this.label83.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label83.Location = new System.Drawing.Point(3, 175);
             this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(69, 25);
+            this.label83.Size = new System.Drawing.Size(68, 25);
             this.label83.TabIndex = 0;
             this.label83.Text = "LW";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1100,7 +1096,7 @@
             this.groupBox7.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox7.Location = new System.Drawing.Point(6, 926);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(770, 225);
+            this.groupBox7.Size = new System.Drawing.Size(753, 225);
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "CONFIG5";
@@ -1140,15 +1136,15 @@
             this.tableLayoutPanelConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanelConfig5.Size = new System.Drawing.Size(758, 200);
+            this.tableLayoutPanelConfig5.Size = new System.Drawing.Size(741, 200);
             this.tableLayoutPanelConfig5.TabIndex = 1;
             // 
             // label63
             // 
             this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label63.Location = new System.Drawing.Point(78, 0);
+            this.label63.Location = new System.Drawing.Point(77, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(266, 25);
+            this.label63.Size = new System.Drawing.Size(260, 25);
             this.label63.TabIndex = 0;
             this.label63.Text = "bit[9:6]\r\nDEADT[3:0]";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1156,9 +1152,9 @@
             // label64
             // 
             this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label64.Location = new System.Drawing.Point(350, 0);
+            this.label64.Location = new System.Drawing.Point(343, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(198, 25);
+            this.label64.Size = new System.Drawing.Size(194, 25);
             this.label64.TabIndex = 0;
             this.label64.Text = "bit[5:3]\r\nAOUTCONF[2:0]";
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1166,9 +1162,9 @@
             // label65
             // 
             this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label65.Location = new System.Drawing.Point(554, 0);
+            this.label65.Location = new System.Drawing.Point(543, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(130, 25);
+            this.label65.Size = new System.Drawing.Size(127, 25);
             this.label65.TabIndex = 0;
             this.label65.Text = "bit[2:1]\r\nCOMERRCONF[2:1]";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1178,7 +1174,7 @@
             this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label66.Location = new System.Drawing.Point(3, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(69, 25);
+            this.label66.Size = new System.Drawing.Size(68, 25);
             this.label66.TabIndex = 0;
             this.label66.Text = "寄存器位";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1188,7 +1184,7 @@
             this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label67.Location = new System.Drawing.Point(3, 50);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(69, 25);
+            this.label67.Size = new System.Drawing.Size(68, 25);
             this.label67.TabIndex = 0;
             this.label67.Text = "HU";
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1198,7 +1194,7 @@
             this.label68.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label68.Location = new System.Drawing.Point(3, 75);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(69, 25);
+            this.label68.Size = new System.Drawing.Size(68, 25);
             this.label68.TabIndex = 0;
             this.label68.Text = "HV";
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1208,7 +1204,7 @@
             this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label69.Location = new System.Drawing.Point(3, 100);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(69, 25);
+            this.label69.Size = new System.Drawing.Size(68, 25);
             this.label69.TabIndex = 0;
             this.label69.Text = "HW";
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1218,7 +1214,7 @@
             this.label70.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label70.Location = new System.Drawing.Point(3, 125);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(69, 25);
+            this.label70.Size = new System.Drawing.Size(68, 25);
             this.label70.TabIndex = 0;
             this.label70.Text = "LU";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1228,7 +1224,7 @@
             this.label71.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label71.Location = new System.Drawing.Point(3, 150);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(69, 25);
+            this.label71.Size = new System.Drawing.Size(68, 25);
             this.label71.TabIndex = 0;
             this.label71.Text = "LV";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1238,7 +1234,7 @@
             this.label72.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label72.Location = new System.Drawing.Point(3, 175);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(69, 25);
+            this.label72.Size = new System.Drawing.Size(68, 25);
             this.label72.TabIndex = 0;
             this.label72.Text = "LW";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1248,7 +1244,7 @@
             this.label89.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label89.Location = new System.Drawing.Point(3, 25);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(69, 25);
+            this.label89.Size = new System.Drawing.Size(68, 25);
             this.label89.TabIndex = 0;
             this.label89.Text = "全部";
             this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1256,9 +1252,9 @@
             // label145
             // 
             this.label145.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label145.Location = new System.Drawing.Point(690, 0);
+            this.label145.Location = new System.Drawing.Point(676, 0);
             this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(65, 25);
+            this.label145.Size = new System.Drawing.Size(62, 25);
             this.label145.TabIndex = 1;
             this.label145.Text = "bit0\r\nCOMERRCONF[0]";
             this.label145.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1272,7 +1268,7 @@
             this.groupBox6.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox6.Location = new System.Drawing.Point(6, 696);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(770, 225);
+            this.groupBox6.Size = new System.Drawing.Size(753, 225);
             this.groupBox6.TabIndex = 5;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "CONFIG4";
@@ -1313,15 +1309,15 @@
             this.tableLayoutPanelConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelConfig4.Size = new System.Drawing.Size(758, 199);
+            this.tableLayoutPanelConfig4.Size = new System.Drawing.Size(741, 199);
             this.tableLayoutPanelConfig4.TabIndex = 1;
             // 
             // label51
             // 
             this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label51.Location = new System.Drawing.Point(78, 0);
+            this.label51.Location = new System.Drawing.Point(77, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(130, 25);
+            this.label51.Size = new System.Drawing.Size(127, 25);
             this.label51.TabIndex = 0;
             this.label51.Text = "bit[9:8]\r\nDESAT_LEB[1:0]";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1329,9 +1325,9 @@
             // label52
             // 
             this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Location = new System.Drawing.Point(214, 0);
+            this.label52.Location = new System.Drawing.Point(210, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(198, 25);
+            this.label52.Size = new System.Drawing.Size(194, 25);
             this.label52.TabIndex = 0;
             this.label52.Text = "bit[7:5]\r\nAOUT_SEL [2:0]";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1339,9 +1335,9 @@
             // label53
             // 
             this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label53.Location = new System.Drawing.Point(418, 0);
+            this.label53.Location = new System.Drawing.Point(410, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(130, 25);
+            this.label53.Size = new System.Drawing.Size(127, 25);
             this.label53.TabIndex = 0;
             this.label53.Text = "bit[4:3]\r\nIDESAT[1:0]";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1349,9 +1345,9 @@
             // label54
             // 
             this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label54.Location = new System.Drawing.Point(554, 0);
+            this.label54.Location = new System.Drawing.Point(543, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(201, 25);
+            this.label54.Size = new System.Drawing.Size(195, 25);
             this.label54.TabIndex = 0;
             this.label54.Text = "bit[2:0]\r\nDESAT_TH[2:0]";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1361,7 +1357,7 @@
             this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label55.Location = new System.Drawing.Point(3, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(69, 25);
+            this.label55.Size = new System.Drawing.Size(68, 25);
             this.label55.TabIndex = 0;
             this.label55.Text = "寄存器位";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1371,7 +1367,7 @@
             this.label56.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label56.Location = new System.Drawing.Point(3, 50);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(69, 25);
+            this.label56.Size = new System.Drawing.Size(68, 25);
             this.label56.TabIndex = 0;
             this.label56.Text = "HU";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1381,7 +1377,7 @@
             this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label57.Location = new System.Drawing.Point(3, 75);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(69, 25);
+            this.label57.Size = new System.Drawing.Size(68, 25);
             this.label57.TabIndex = 0;
             this.label57.Text = "HV";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1391,7 +1387,7 @@
             this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label58.Location = new System.Drawing.Point(3, 100);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(69, 25);
+            this.label58.Size = new System.Drawing.Size(68, 25);
             this.label58.TabIndex = 0;
             this.label58.Text = "HW";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1401,7 +1397,7 @@
             this.label59.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label59.Location = new System.Drawing.Point(3, 125);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(69, 25);
+            this.label59.Size = new System.Drawing.Size(68, 25);
             this.label59.TabIndex = 0;
             this.label59.Text = "LU";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1411,7 +1407,7 @@
             this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label60.Location = new System.Drawing.Point(3, 150);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(69, 25);
+            this.label60.Size = new System.Drawing.Size(68, 25);
             this.label60.TabIndex = 0;
             this.label60.Text = "LV";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1421,7 +1417,7 @@
             this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label61.Location = new System.Drawing.Point(3, 175);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(69, 25);
+            this.label61.Size = new System.Drawing.Size(68, 25);
             this.label61.TabIndex = 0;
             this.label61.Text = "LW";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1431,7 +1427,7 @@
             this.label87.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label87.Location = new System.Drawing.Point(3, 25);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(69, 25);
+            this.label87.Size = new System.Drawing.Size(68, 25);
             this.label87.TabIndex = 0;
             this.label87.Text = "全部";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1445,7 +1441,7 @@
             this.groupBox5.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox5.Location = new System.Drawing.Point(6, 466);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(770, 225);
+            this.groupBox5.Size = new System.Drawing.Size(753, 225);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "CONFIG3";
@@ -1485,15 +1481,15 @@
             this.tableLayoutPanelConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanelConfig3.Size = new System.Drawing.Size(758, 200);
+            this.tableLayoutPanelConfig3.Size = new System.Drawing.Size(741, 200);
             this.tableLayoutPanelConfig3.TabIndex = 1;
             // 
             // label44
             // 
             this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label44.Location = new System.Drawing.Point(78, 0);
+            this.label44.Location = new System.Drawing.Point(77, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(62, 25);
+            this.label44.Size = new System.Drawing.Size(60, 25);
             this.label44.TabIndex = 0;
             this.label44.Text = "bit9";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1501,9 +1497,9 @@
             // label43
             // 
             this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label43.Location = new System.Drawing.Point(146, 0);
+            this.label43.Location = new System.Drawing.Point(143, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(198, 25);
+            this.label43.Size = new System.Drawing.Size(194, 25);
             this.label43.TabIndex = 0;
             this.label43.Text = "bit[8:6]\r\nSEGDRVDLY[2:0]";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1511,9 +1507,9 @@
             // label41
             // 
             this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label41.Location = new System.Drawing.Point(350, 0);
+            this.label41.Location = new System.Drawing.Point(343, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(198, 25);
+            this.label41.Size = new System.Drawing.Size(194, 25);
             this.label41.TabIndex = 0;
             this.label41.Text = "bit[5:3]\r\nSSD_CUR[2:0]";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1521,9 +1517,9 @@
             // label40
             // 
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Location = new System.Drawing.Point(554, 0);
+            this.label40.Location = new System.Drawing.Point(543, 0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(201, 25);
+            this.label40.Size = new System.Drawing.Size(195, 25);
             this.label40.TabIndex = 0;
             this.label40.Text = "bit[2:0]\r\nSSDT[2:0]";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1533,7 +1529,7 @@
             this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label45.Location = new System.Drawing.Point(3, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(69, 25);
+            this.label45.Size = new System.Drawing.Size(68, 25);
             this.label45.TabIndex = 0;
             this.label45.Text = "寄存器位";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1543,7 +1539,7 @@
             this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label46.Location = new System.Drawing.Point(3, 50);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(69, 25);
+            this.label46.Size = new System.Drawing.Size(68, 25);
             this.label46.TabIndex = 0;
             this.label46.Text = "HU";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1553,7 +1549,7 @@
             this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label47.Location = new System.Drawing.Point(3, 75);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(69, 25);
+            this.label47.Size = new System.Drawing.Size(68, 25);
             this.label47.TabIndex = 0;
             this.label47.Text = "HV";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1563,7 +1559,7 @@
             this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label48.Location = new System.Drawing.Point(3, 100);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(69, 25);
+            this.label48.Size = new System.Drawing.Size(68, 25);
             this.label48.TabIndex = 0;
             this.label48.Text = "HW";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1573,7 +1569,7 @@
             this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label49.Location = new System.Drawing.Point(3, 125);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(69, 25);
+            this.label49.Size = new System.Drawing.Size(68, 25);
             this.label49.TabIndex = 0;
             this.label49.Text = "LU";
             this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1583,7 +1579,7 @@
             this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label50.Location = new System.Drawing.Point(3, 150);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(69, 25);
+            this.label50.Size = new System.Drawing.Size(68, 25);
             this.label50.TabIndex = 0;
             this.label50.Text = "LV";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1593,7 +1589,7 @@
             this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label42.Location = new System.Drawing.Point(3, 175);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(69, 25);
+            this.label42.Size = new System.Drawing.Size(68, 25);
             this.label42.TabIndex = 0;
             this.label42.Text = "LW";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1603,7 +1599,7 @@
             this.label86.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label86.Location = new System.Drawing.Point(3, 25);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(69, 25);
+            this.label86.Size = new System.Drawing.Size(68, 25);
             this.label86.TabIndex = 0;
             this.label86.Text = "全部";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1617,7 +1613,7 @@
             this.groupBox4.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox4.Location = new System.Drawing.Point(6, 236);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(770, 225);
+            this.groupBox4.Size = new System.Drawing.Size(753, 225);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "CONFIG2";
@@ -1657,15 +1653,15 @@
             this.tableLayoutPanelConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanelConfig2.Size = new System.Drawing.Size(758, 200);
+            this.tableLayoutPanelConfig2.Size = new System.Drawing.Size(741, 200);
             this.tableLayoutPanelConfig2.TabIndex = 1;
             // 
             // label30
             // 
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Location = new System.Drawing.Point(78, 0);
+            this.label30.Location = new System.Drawing.Point(77, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(62, 25);
+            this.label30.Size = new System.Drawing.Size(60, 25);
             this.label30.TabIndex = 0;
             this.label30.Text = "bit9";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1673,9 +1669,9 @@
             // label28
             // 
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(146, 0);
+            this.label28.Location = new System.Drawing.Point(143, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(198, 25);
+            this.label28.Size = new System.Drawing.Size(194, 25);
             this.label28.TabIndex = 0;
             this.label28.Text = "bit[8:6]\r\n2LTOV[2:0]";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1683,9 +1679,9 @@
             // label25
             // 
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Location = new System.Drawing.Point(350, 0);
+            this.label25.Location = new System.Drawing.Point(343, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(198, 25);
+            this.label25.Size = new System.Drawing.Size(194, 25);
             this.label25.TabIndex = 0;
             this.label25.Text = "bit[5:3]\r\nSCTH[2:0]";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1693,9 +1689,9 @@
             // label24
             // 
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Location = new System.Drawing.Point(554, 0);
+            this.label24.Location = new System.Drawing.Point(543, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(201, 25);
+            this.label24.Size = new System.Drawing.Size(195, 25);
             this.label24.TabIndex = 0;
             this.label24.Text = "bit[2:0]\r\nSCFILT[2:0]";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1705,7 +1701,7 @@
             this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label31.Location = new System.Drawing.Point(3, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(69, 25);
+            this.label31.Size = new System.Drawing.Size(68, 25);
             this.label31.TabIndex = 0;
             this.label31.Text = "寄存器位";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1715,7 +1711,7 @@
             this.label85.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label85.Location = new System.Drawing.Point(3, 25);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(69, 25);
+            this.label85.Size = new System.Drawing.Size(68, 25);
             this.label85.TabIndex = 0;
             this.label85.Text = "全部";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1725,7 +1721,7 @@
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label35.Location = new System.Drawing.Point(3, 50);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(69, 25);
+            this.label35.Size = new System.Drawing.Size(68, 25);
             this.label35.TabIndex = 0;
             this.label35.Text = "HU";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1735,7 +1731,7 @@
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label36.Location = new System.Drawing.Point(3, 75);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(69, 25);
+            this.label36.Size = new System.Drawing.Size(68, 25);
             this.label36.TabIndex = 0;
             this.label36.Text = "HV";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1745,7 +1741,7 @@
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label37.Location = new System.Drawing.Point(3, 100);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(69, 25);
+            this.label37.Size = new System.Drawing.Size(68, 25);
             this.label37.TabIndex = 0;
             this.label37.Text = "HW";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1755,7 +1751,7 @@
             this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label38.Location = new System.Drawing.Point(3, 125);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(69, 25);
+            this.label38.Size = new System.Drawing.Size(68, 25);
             this.label38.TabIndex = 0;
             this.label38.Text = "LU";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1765,7 +1761,7 @@
             this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label39.Location = new System.Drawing.Point(3, 150);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(69, 25);
+            this.label39.Size = new System.Drawing.Size(68, 25);
             this.label39.TabIndex = 0;
             this.label39.Text = "LV";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1775,7 +1771,7 @@
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Location = new System.Drawing.Point(3, 175);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(69, 25);
+            this.label27.Size = new System.Drawing.Size(68, 25);
             this.label27.TabIndex = 0;
             this.label27.Text = "LW";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1789,7 +1785,7 @@
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(770, 225);
+            this.groupBox3.Size = new System.Drawing.Size(753, 225);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CONFIG1";
@@ -1830,15 +1826,15 @@
             this.tableLayoutPanelConfig1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelConfig1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelConfig1.Size = new System.Drawing.Size(758, 200);
+            this.tableLayoutPanelConfig1.Size = new System.Drawing.Size(741, 200);
             this.tableLayoutPanelConfig1.TabIndex = 1;
             // 
             // label34
             // 
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.Location = new System.Drawing.Point(78, 0);
+            this.label34.Location = new System.Drawing.Point(77, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(62, 25);
+            this.label34.Size = new System.Drawing.Size(60, 25);
             this.label34.TabIndex = 0;
             this.label34.Text = "bit9\r\nUV_DIS";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1846,9 +1842,9 @@
             // label29
             // 
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Location = new System.Drawing.Point(350, 0);
+            this.label29.Location = new System.Drawing.Point(343, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(198, 25);
+            this.label29.Size = new System.Drawing.Size(194, 25);
             this.label29.TabIndex = 0;
             this.label29.Text = "bit[5:3]\r\nOCTH[2:0]";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1856,9 +1852,9 @@
             // label32
             // 
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.Location = new System.Drawing.Point(146, 0);
+            this.label32.Location = new System.Drawing.Point(143, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(198, 25);
+            this.label32.Size = new System.Drawing.Size(194, 25);
             this.label32.TabIndex = 0;
             this.label32.Text = "bit[8:6]\r\nUV_TH[2:0]";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1866,9 +1862,9 @@
             // label26
             // 
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(554, 0);
+            this.label26.Location = new System.Drawing.Point(543, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(201, 25);
+            this.label26.Size = new System.Drawing.Size(195, 25);
             this.label26.TabIndex = 0;
             this.label26.Text = "bit[2:0]\r\nOCFILT[2:0]";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1878,7 +1874,7 @@
             this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label33.Location = new System.Drawing.Point(3, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(69, 25);
+            this.label33.Size = new System.Drawing.Size(68, 25);
             this.label33.TabIndex = 0;
             this.label33.Text = "寄存器位";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1888,7 +1884,7 @@
             this.label84.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label84.Location = new System.Drawing.Point(3, 25);
             this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(69, 25);
+            this.label84.Size = new System.Drawing.Size(68, 25);
             this.label84.TabIndex = 0;
             this.label84.Text = "全部";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1898,7 +1894,7 @@
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Location = new System.Drawing.Point(3, 50);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(69, 25);
+            this.label19.Size = new System.Drawing.Size(68, 25);
             this.label19.TabIndex = 0;
             this.label19.Text = "HU";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1908,7 +1904,7 @@
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Location = new System.Drawing.Point(3, 75);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(69, 25);
+            this.label20.Size = new System.Drawing.Size(68, 25);
             this.label20.TabIndex = 0;
             this.label20.Text = "HV";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1918,7 +1914,7 @@
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label21.Location = new System.Drawing.Point(3, 100);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(69, 25);
+            this.label21.Size = new System.Drawing.Size(68, 25);
             this.label21.TabIndex = 0;
             this.label21.Text = "HW";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1928,7 +1924,7 @@
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Location = new System.Drawing.Point(3, 125);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(69, 25);
+            this.label22.Size = new System.Drawing.Size(68, 25);
             this.label22.TabIndex = 0;
             this.label22.Text = "LU";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1938,7 +1934,7 @@
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Location = new System.Drawing.Point(3, 150);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(69, 25);
+            this.label23.Size = new System.Drawing.Size(68, 25);
             this.label23.TabIndex = 0;
             this.label23.Text = "LV";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1948,7 +1944,7 @@
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Location = new System.Drawing.Point(3, 175);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 25);
+            this.label18.Size = new System.Drawing.Size(68, 25);
             this.label18.TabIndex = 0;
             this.label18.Text = "LW";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

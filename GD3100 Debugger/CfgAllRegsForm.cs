@@ -939,29 +939,505 @@ namespace GD3100Debugger
 
         private void ReceiveFram(FramLoad load)
         {
+            UInt32 data = load.Data;
             switch (load.RegAddr)
             {
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Mode1:
-
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            if ((data & 0x200) == 0)
+                            {
+                                rb_mode1_AOUT[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_AOUT[i].Checked = true;
+                            }
+                            if ((data & 0x100) == 0)
+                            {
+                                rb_mode1_SEGDRV[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_SEGDRV[i].Checked = true;
+                            }
+                            if ((data & 0x080) == 0)
+                            {
+                                rb_mode1_AMC[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_AMC[i].Checked = true;
+                            }
+                            if ((data & 0x040) == 0)
+                            {
+                                rb_mode1_TEMPSNS[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_TEMPSNS[i].Checked = true;
+                            }
+                            if ((data & 0x020) == 0)
+                            {
+                                rb_mode1_SSD[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_SSD[i].Checked = true;
+                            }
+                            if ((data & 0x010) == 0)
+                            {
+                                rb_mode1_2LTO[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_2LTO[i].Checked = true;
+                            }
+                            if ((data & 0x008) == 0)
+                            {
+                                rb_mode1_ACTCLMP[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_ACTCLMP[i].Checked = true;
+                            }
+                            if ((data & 0x004) == 0)
+                            {
+                                rb_mode1_DESAT[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_DESAT[i].Checked = true;
+                            }
+                            if ((data & 0x002) == 0)
+                            {
+                                rb_mode1_SCSNS[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_SCSNS[i].Checked = true;
+                            }
+                            if ((data & 0x001) == 0)
+                            {
+                                rb_mode1_OCSNS[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode1_OCSNS[i].Checked = true;
+                            }
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            rb_mode1_AOUT[0].Checked = true;
+                            rb_mode1_SEGDRV[0].Checked = true;
+                            rb_mode1_AMC[0].Checked = true;
+                            rb_mode1_TEMPSNS[0].Checked = true;
+                            rb_mode1_SSD[0].Checked = true;
+                            rb_mode1_2LTO[0].Checked = true;
+                            rb_mode1_ACTCLMP[0].Checked = true;
+                            rb_mode1_DESAT[0].Checked = true;
+                            rb_mode1_SCSNS[0].Checked = true;
+                            rb_mode1_OCSNS[0].Checked = true;
+                        }
+                        else
+                        {
+                            rb_mode1_AOUT[0].Checked = false;
+                            rb_mode1_SEGDRV[0].Checked = false;
+                            rb_mode1_AMC[0].Checked = false;
+                            rb_mode1_TEMPSNS[0].Checked = false;
+                            rb_mode1_SSD[0].Checked = false;
+                            rb_mode1_2LTO[0].Checked = false;
+                            rb_mode1_ACTCLMP[0].Checked = false;
+                            rb_mode1_DESAT[0].Checked = false;
+                            rb_mode1_SCSNS[0].Checked = false;
+                            rb_mode1_OCSNS[0].Checked = false;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Mode2:
-
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            if ((data & 0x040) == 0)
+                            {
+                                rb_mode2_FSISOEN[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode2_FSISOEN[i].Checked = true;
+                            }
+                            if ((data & 0x008) == 0)
+                            {
+                                rb_mode2_BIST[i].Checked = false;
+                            }   
+                            else
+                            {
+                                rb_mode2_BIST[i].Checked = true;
+                            }
+                            if ((data & 0x004) == 0)
+                            {
+                                rb_mode2_CONFIG_EN[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode2_CONFIG_EN[i].Checked = true;
+                            }
+                            if ((data & 0x002) == 0)
+                            {
+                                rb_mode2_RESET[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mode2_RESET[i].Checked = true;
+                            }                            
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            rb_mode2_FSISOEN[0].Checked = true;
+                            rb_mode2_BIST[0].Checked = true;
+                            rb_mode2_CONFIG_EN[0].Checked = true;
+                            rb_mode2_RESET[0].Checked = true;
+                        }
+                        else
+                        {
+                            rb_mode2_FSISOEN[0].Checked = false;
+                            rb_mode2_BIST[0].Checked = false;
+                            rb_mode2_CONFIG_EN[0].Checked = false;
+                            rb_mode2_RESET[0].Checked = false;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Config1:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            if ((data & 0x200) == 0)
+                            {
+                                rb_config1_UV_DIS[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_config1_UV_DIS[i].Checked = true;
+                            }
+                            cb_config1_UV_TH[i].SelectedIndex = (int)((data & 0x1c0) >> 6);
+                            cb_config1_OCTH[i].SelectedIndex = (int)((data & 0x038) >> 3);
+                            cb_config1_OCFILT[i].SelectedIndex = (int)(data & 0x007);
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            rb_config1_UV_DIS[0].Checked = rb_config1_UV_DIS[1].Checked;
+                            cb_config1_UV_TH[0].SelectedIndex = cb_config1_UV_TH[1].SelectedIndex;
+                            cb_config1_OCTH[0].SelectedIndex = cb_config1_OCTH[1].SelectedIndex;
+                            cb_config1_OCFILT[0].SelectedIndex = cb_config1_OCFILT[1].SelectedIndex;
+                        }
+                        else
+                        {
+                            rb_config1_UV_DIS[0].Checked = false;
+                            cb_config1_UV_TH[0].SelectedIndex = 0;
+                            cb_config1_OCTH[0].SelectedIndex = 0;
+                            cb_config1_OCFILT[0].SelectedIndex = 0;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Config2:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            cb_config2_2LTOV[i].SelectedIndex = (int)((data & 0x1c0) >> 6);
+                            cb_config2_SCTH[i].SelectedIndex = (int)((data & 0x038) >> 3);
+                            cb_config2_SCFILT[i].SelectedIndex = (int)(data & 0x007);
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            cb_config2_2LTOV[0].SelectedIndex = cb_config2_2LTOV[1].SelectedIndex;
+                            cb_config2_SCTH[0].SelectedIndex = cb_config2_SCTH[1].SelectedIndex;
+                            cb_config2_SCFILT[0].SelectedIndex = cb_config2_SCFILT[1].SelectedIndex;
+                        }
+                        else
+                        {
+                            cb_config2_2LTOV[0].SelectedIndex = 0;
+                            cb_config2_SCTH[0].SelectedIndex = 0;
+                            cb_config2_SCFILT[0].SelectedIndex = 0;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Config3:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            cb_config3_SEGDRVDLY[i].SelectedIndex = (int)((data & 0x1c0) >> 6);
+                            cb_config3_SSD_CUR[i].SelectedIndex = (int)((data & 0x038) >> 3);
+                            cb_config3_SSDT[i].SelectedIndex = (int)(data & 0x007);
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            cb_config3_SEGDRVDLY[0].SelectedIndex = cb_config3_SEGDRVDLY[1].SelectedIndex;
+                            cb_config3_SSD_CUR[0].SelectedIndex = cb_config3_SSD_CUR[1].SelectedIndex;
+                            cb_config3_SSDT[0].SelectedIndex = cb_config3_SSDT[1].SelectedIndex;
+                        }
+                        else
+                        {
+                            cb_config3_SEGDRVDLY[0].SelectedIndex = 0;
+                            cb_config3_SSD_CUR[0].SelectedIndex = 0;
+                            cb_config3_SSDT[0].SelectedIndex = 0;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Config4:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            cb_config4_DESAT_LEB[i].SelectedIndex = (int)((data & 0x300) >> 7);
+                            cb_config4_AOUT_SEL[i].SelectedIndex = (int)((data & 0x0E0) >> 5);
+                            cb_config4_IDESAT[i].SelectedIndex = (int)((data & 0x018) >> 3);
+                            cb_config4_DESAT_TH[i].SelectedIndex = (int)(data & 0x007);
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            cb_config4_DESAT_LEB[0].SelectedIndex = cb_config4_DESAT_LEB[1].SelectedIndex;
+                            cb_config4_AOUT_SEL[0].SelectedIndex = cb_config4_AOUT_SEL[1].SelectedIndex;
+                            cb_config4_IDESAT[0].SelectedIndex = cb_config4_IDESAT[1].SelectedIndex;
+                            cb_config4_DESAT_TH[0].SelectedIndex = cb_config4_DESAT_TH[1].SelectedIndex;
+                        }
+                        else
+                        {
+                            cb_config4_DESAT_LEB[0].SelectedIndex = 0;
+                            cb_config4_AOUT_SEL[0].SelectedIndex = 0;
+                            cb_config4_IDESAT[0].SelectedIndex = 0;
+                            cb_config4_DESAT_TH[0].SelectedIndex = 0;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Config5:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            cb_config5_DEADT[i].SelectedIndex = (int)((data & 0x3C0) >> 6);
+                            cb_config5_AOUTCONF[i].SelectedIndex = (int)((data & 0x038) >> 3);
+                            cb_config5_COMERRCONF21[i].SelectedIndex = (int)((data & 0x006) >> 1);
+                            cb_config5_COMERRCONF0[i].SelectedIndex = (int)(data & 0x001);
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            cb_config5_DEADT[0].SelectedIndex = cb_config5_DEADT[1].SelectedIndex;
+                            cb_config5_AOUTCONF[0].SelectedIndex = cb_config5_AOUTCONF[1].SelectedIndex;
+                            cb_config5_COMERRCONF21[0].SelectedIndex = cb_config5_COMERRCONF21[1].SelectedIndex;
+                            cb_config5_COMERRCONF0[0].SelectedIndex = cb_config5_COMERRCONF0[1].SelectedIndex;
+                        }
+                        else
+                        {
+                            cb_config5_DEADT[0].SelectedIndex = 0;
+                            cb_config5_AOUTCONF[0].SelectedIndex = 0;
+                            cb_config5_COMERRCONF21[0].SelectedIndex = 0;
+                            cb_config5_COMERRCONF0[0].SelectedIndex = 0;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Config6:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            if ((data & 0x200) == 0)
+                            {
+                                rb_config6_INTBFS[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_config6_INTBFS[i].Checked = true;
+                            }
+                            cb_config6_WDTO[i].SelectedIndex = (int)((data & 0x030) >> 4);
+                            cb_config6_VGEMONDLY[i].SelectedIndex = (int)(data & 0x00F);
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            rb_config6_INTBFS[0].Checked = rb_config6_INTBFS[1].Checked;
+                            cb_config6_WDTO[0].SelectedIndex = cb_config6_WDTO[1].SelectedIndex;
+                            cb_config6_VGEMONDLY[0].SelectedIndex = cb_config6_VGEMONDLY[1].SelectedIndex;
+                        }
+                        else
+                        {
+                            rb_config6_INTBFS[i].Checked = false;
+                            cb_config6_WDTO[0].SelectedIndex = 0;
+                            cb_config6_VGEMONDLY[0].SelectedIndex = 0;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Mask1:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            if ((data & 0x200) == 0)
+                            {
+                                rb_mask1_VCCOVM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask1_VCCOVM[i].Checked = true;
+                            }
+                            if ((data & 0x100) == 0)
+                            {
+                                rb_mask1_VCCREGUVM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask1_VCCREGUVM[i].Checked = true;
+                            }
+                            if ((data & 0x080) == 0)
+                            {
+                                rb_mask1_VSUPOVM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask1_VSUPOVM[i].Checked = true;
+                            }
+                            if ((data & 0x020) == 0)
+                            {
+                                rb_mask1_OTSDM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask1_OTSDM[i].Checked = true;
+                            }
+                            if ((data & 0x010) == 0)
+                            {
+                                rb_mask1_OTWM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask1_OTWM[i].Checked = true;
+                            }
+                            if ((data & 0x008) == 0)
+                            {
+                                rb_mask1_CLAMPM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask1_CLAMPM[i].Checked = true;
+                            }
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            rb_mask1_VCCOVM[0].Checked = true;
+                            rb_mask1_VCCREGUVM[0].Checked = true;
+                            rb_mask1_VSUPOVM[0].Checked = true;
+                            rb_mask1_OTSDM[0].Checked = true;
+                            rb_mask1_OTWM[0].Checked = true;
+                            rb_mask1_CLAMPM[0].Checked = true;
+                        }
+                        else
+                        {
+                            rb_mask1_VCCOVM[0].Checked = false;
+                            rb_mask1_VCCREGUVM[0].Checked = false;
+                            rb_mask1_VSUPOVM[0].Checked = false;
+                            rb_mask1_OTSDM[0].Checked = false;
+                            rb_mask1_OTWM[0].Checked = false;
+                            rb_mask1_CLAMPM[0].Checked = false;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.Mask2:
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if ((load.ChipSelect & (1 << (i - 1))) != 0)
+                        {
+                            if ((data & 0x080) == 0)
+                            {
+                                rb_mask2_DTFLTM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_DTFLTM[i].Checked = true;
+                            }
+                            if ((data & 0x040) == 0)
+                            {
+                                rb_mask2_SPIERRM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_SPIERRM[i].Checked = true;
+                            }
+                            if ((data & 0x020) == 0)
+                            {
+                                rb_mask2_CONFCRCERRM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_CONFCRCERRM[i].Checked = true;
+                            }
+                            if ((data & 0x010) == 0)
+                            {
+                                rb_mask2_VGE_FLTM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_VGE_FLTM[i].Checked = true;
+                            }
+                            if ((data & 0x008) == 0)
+                            {
+                                rb_mask2_WDOG_FLTM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_WDOG_FLTM[i].Checked = true;
+                            }
+                            if ((data & 0x004) == 0)
+                            {
+                                rb_mask2_COMERRM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_COMERRM[i].Checked = true;
+                            }
+                            if ((data & 0x002) == 0)
+                            {
+                                rb_mask2_VREF_UVM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_VREF_UVM[i].Checked = true;
+                            }
+                            if ((data & 0x001) == 0)
+                            {
+                                rb_mask2_VEEM[i].Checked = false;
+                            }
+                            else
+                            {
+                                rb_mask2_VEEM[i].Checked = true;
+                            }
+                        }
+                        if ((load.ChipSelect & 0x3f) == 0x3f)
+                        {
+                            rb_mask2_DTFLTM[0].Checked = true;
+                            rb_mask2_SPIERRM[0].Checked = true;
+                            rb_mask2_CONFCRCERRM[0].Checked = true;
+                            rb_mask2_VGE_FLTM[0].Checked = true;
+                            rb_mask2_WDOG_FLTM[0].Checked = true;
+                            rb_mask2_COMERRM[0].Checked = true;
+                            rb_mask2_VREF_UVM[0].Checked = true;
+                            rb_mask2_VEEM[0].Checked = true;
+                        }
+                        else
+                        {
+                            rb_mask2_DTFLTM[0].Checked = false;
+                            rb_mask2_SPIERRM[0].Checked = false;
+                            rb_mask2_CONFCRCERRM[0].Checked = false;
+                            rb_mask2_VGE_FLTM[0].Checked = false;
+                            rb_mask2_WDOG_FLTM[0].Checked = false;
+                            rb_mask2_COMERRM[0].Checked = false;
+                            rb_mask2_VREF_UVM[0].Checked = false;
+                            rb_mask2_VEEM[0].Checked = false;
+                        }
+                    }
                     break;
                 case (int)GD3100RegDefine.Gd3100_RegAddr.OT_TH:
                     break;
